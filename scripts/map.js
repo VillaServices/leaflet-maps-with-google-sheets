@@ -57,8 +57,8 @@ $(window).on('load', function() {
       zoom = map.getBoundsZoom(points.getBounds());
     }
 
-    
-    map.setView([41.76,-72.69], 11);
+    map.setView(center, zoom);
+
   }
 
 
