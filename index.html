@@ -94,13 +94,14 @@
  
    <script type="text/javascript">
     var lat = GetURLParameter('lat');
+     alert(lat);
     var long = GetURLParameter('long');
     var map = L.map('map', {
       attributionControl: false,
       zoomControl: false,
       scrollWheelZoom: false,
       tap: false
-    }).setView([lat,long], 11); // default center is overridden by Google Sheet options and points setView([41.76,-72.69], 11)
+    }).setView([41.76,-72.69], 11); // default center is overridden by Google Sheet options and points setView([41.76,-72.69], 11)
   </script>
 
 </body>
