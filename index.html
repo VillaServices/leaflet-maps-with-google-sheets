@@ -81,6 +81,7 @@
       const params = new URLSearchParams(document.location.search);
       const lat = params.get("lat");
       const long = params.get("long");
+      const zoom = params.get("zoom");
       console.info(lat); //show lat
       console.info(long); //show long
 
@@ -89,7 +90,7 @@
       zoomControl: false,
       scrollWheelZoom: false,
       tap: false
-    }).setView([lat,long], 14); // default center is overridden by Google Sheet options and points setView([41.76,-72.69], 11)
+    }).setView([lat,long], zoom); // default center is overridden by Google Sheet options and points setView([41.76,-72.69], 11)
   </script>
 
 </body>
