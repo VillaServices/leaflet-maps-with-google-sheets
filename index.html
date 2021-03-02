@@ -93,9 +93,12 @@
   </script>
  
    <script type="text/javascript">
-    var lati = GetURLParameter('lat');
-     alert(lat);
-    var longi = GetURLParameter('long');
+      const params = new URLSearchParams(document.location.search);
+      const s = params.get("s");
+      const o = params.get("o");
+      console.info(s); //show C
+      console.info(o); //show 1
+
     var map = L.map('map', {
       attributionControl: false,
       zoomControl: false,
